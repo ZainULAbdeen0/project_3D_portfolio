@@ -1,3 +1,4 @@
+import {useState , useEffect} from 'react'
 import { motion } from "framer-motion";
 import { styles } from "../style.js";
 import { ComputersCanvas } from "./canvas";
@@ -14,10 +15,24 @@ const Hero = () => {
         </div>
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi I&apos;m <span className="text-[#915eff]">ZainUlAbdeen</span>
+            Hi, I&apos;m <span className="text-[#915eff]">ZainUlAbdeen</span>
           </h1>
           <p className={`${styles.heroSubText} text-white-100`}>Crafting Seamless Web <br className="sm:block hidden"/>Experiences with MERN & Next.js</p>
         </div>
+      </div>
+      <ComputersCanvas/>
+      <div className="absolute xl:bottom-14 sm:bottom-1 bottom-32 flex justify-center items-center w-full pointer-events-none">
+        <a href="#about" className='w-[30px] h-[65px] xl:w-[25px] xl:[60px] rounded-full border-4 border-secondary flex justify-center items-center pointer-events-auto'>
+          <motion.div
+            animate = {{y:[0 , 24  ,0]}}
+            transition={{
+              duration: 1.5,
+              repeat: Infinity,
+              repeatType: 'loop',
+            }}
+            className = "mb-[10px] h-3 w-3 rounded-full bg-secondary"
+          />  
+        </a>
       </div>
     </section>
   );

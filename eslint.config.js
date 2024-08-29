@@ -5,6 +5,9 @@ import reactHooks from 'eslint-plugin-react-hooks'
 import reactRefresh from 'eslint-plugin-react-refresh'
 
 export default [
+  {
+    "react/no-unknown-property": ['error', { ignore: ['css'] }]
+    },
   { ignores: ['dist'] },
   {
     files: ['**/*.{js,jsx}'],
