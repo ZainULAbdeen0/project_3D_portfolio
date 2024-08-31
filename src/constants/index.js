@@ -47,7 +47,7 @@ const services = [
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "MERN | NextJs developer",
     icon: mobile,
   },
   {
@@ -55,7 +55,7 @@ const services = [
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "UI Designer",
     icon: creator,
   },
 ];

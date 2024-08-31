@@ -15,14 +15,17 @@ const Hero = () => {
         </div>
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I&apos;m <span className="text-[#915eff]">ZainUlAbdeen</span>
+            Hi, I&apos;m <span className="text-[#915eff]">Zain</span>
           </h1>
           <p className={`${styles.heroSubText} text-white-100`}>Crafting Seamless Web <br className="sm:block hidden"/>Experiences with MERN & Next.js</p>
         </div>
       </div>
-      <ComputersCanvas/>
-      <div className="absolute xl:bottom-14 sm:bottom-1 bottom-32 flex justify-center items-center w-full pointer-events-none">
-        <a href="#about" className='w-[30px] h-[65px] xl:w-[25px] xl:[60px] rounded-full border-4 border-secondary flex justify-center items-center pointer-events-auto'>
+      <ComputersCanvas
+      className="z-50"
+      />
+      <div className="absolute  xl:bottom-6 sm:bottom-3 bottom-10 flex justify-center items-center w-full pointer-events-none">
+        <a href="#about">
+          <div className='w-[30px] h-[65px] xl:w-[25px] xl:h-[60px] rounded-full border-4 border-secondary flex justify-center items-center pointer-events-auto'>
           <motion.div
             animate = {{y:[0 , 24  ,0]}}
             transition={{
@@ -32,6 +35,7 @@ const Hero = () => {
             }}
             className = "mb-[10px] h-3 w-3 rounded-full bg-secondary"
           />  
+          </div>
         </a>
       </div>
     </section>
