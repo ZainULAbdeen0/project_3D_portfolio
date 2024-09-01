@@ -4,7 +4,7 @@ import CanvasLoader from '../Loader'
 import { Decal , Float , OrbitControls , Preload , useTexture} from '@react-three/drei'
 
 const Ball = ({icon}) => {
-  {console.log(icon)}
+  
 const decal = useTexture(icon)
   return (
     <Float floatIntensity={2} speed={0.75} rotationIntensity={1}>
