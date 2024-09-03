@@ -1,9 +1,9 @@
 import logo from "./logo.svg";
-import backend from "./backend.png";
-import creator from "./creator.png";
-import mobile from "./mobile.png";
-import web from "./web.png";
-import github from "./github.png";
+import backend from "./backend.webp";
+import creator from "./creator.webp";
+import mobile from "./mobile.webp";
+import web from "./web.webp";
+import github from "./github.webp";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
@@ -26,10 +26,9 @@ import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 
-import carrent from "./carrent.png";
-import PromptPlanet from './PromptPlanet.png'
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import carrent from "./carrent.webp";
+import PromptPlanet from './PromptPlanet.webp'
+import tripguide from "./tripguide.webp";
 
 export {
   logo,
@@ -58,7 +57,6 @@ export {
   starbucks,
   tesla,
   carrent,
-  jobit,
   tripguide,
   PromptPlanet,
 };
