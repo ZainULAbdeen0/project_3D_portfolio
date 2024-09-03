@@ -6,6 +6,10 @@ import emailJs from '@emailjs/browser'
 import { motion } from 'framer-motion';
 import EarthCanvas from './canvas/Earth'
 
+// service_h6q7e9q
+// template_93qj6zq
+// 7FFYAnL4UPMwGLWJW
+
 const Contact = () => {
   const formRef = useRef()
   const [form, setForm] = useState({
@@ -15,9 +19,43 @@ const Contact = () => {
   })
   const [loading, setLoading] = useState(false)
 
-  const handleChange = ()=>{}
+  const handleChange = (e)=>{
+    const {name , value} = e.target;
 
-  const handleSubmit = ()=>{}
+    setForm({...form , [name] : value})
+  }
+
+  const handleSubmit = (e)=>{
+    e.preventDefault();
+    setLoading(true);
+
+    emailJs.send(
+      "service_h6q7e9q",
+      "template_93qj6zq",
+      {
+        from_name : form.name,
+        to_name : "Zain_Ul_Abdeen",
+        from_email : form.email,
+        to_email: "mujtabazain183@gmail.com",
+        message : form.message,
+      },
+      "7FFYAnL4UPMwGLWJW"
+    )
+    .then(()=>{
+      setLoading(false);  
+      setForm({
+        name:"",
+        message:"",
+        email:"",
+      })
+      alert("Thank you. I will get back to you as soon as possible.")
+
+    }, (error)=>{
+        setLoading(false);
+        alert("Something went wrong");
+        console.log(error)
+    })
+  }
 
   return (
     <div className='xl:mt-12 xl:flex-row flex flex-col-reverse gap-10 overflow-hidden' >
@@ -53,8 +91,8 @@ const Contact = () => {
               value={form.name} 
               name="name" 
               onChange={handleChange} 
-              placeholder="Write your name here..." 
-              className='py-4 px-6 bg-tertiary rounded-lg text-white placeholder:text-secondary outlined-none border-none font-medium'
+              placeholder="e.g Ali" 
+              className='py-4 px-6 bg-tertiary rounded-lg text-white placeholder:text-secondary placeholder:text-sm outlined-none border-none font-medium'
             />
             </label>
             <label 
@@ -70,8 +108,8 @@ const Contact = () => {
                 value={form.email} 
                 name="email" 
                 onChange={handleChange} 
-                placeholder="Write your email here..." 
-                className='py-4 px-6 bg-tertiary rounded-lg text-white placeholder:text-secondary outlined-none border-none font-medium'
+                placeholder="XYZ@mail.com" 
+                className='py-4 px-6 placeholder:text-sm bg-tertiary rounded-lg text-white placeholder:text-secondary outlined-none border-none font-medium'
               />
             </label>
             <label 
@@ -89,7 +127,7 @@ const Contact = () => {
                 name="message" 
                 onChange={handleChange} 
                 placeholder="What do you want to say" 
-                className='py-4 px-6 bg-tertiary rounded-lg text-white placeholder:text-secondary outlined-none border-none font-medium'
+                className='py-4 px-6 placeholder:text-sm bg-tertiary rounded-lg text-white placeholder:text-secondary outlined-none border-none font-medium'
               />
             </label>
             <button 

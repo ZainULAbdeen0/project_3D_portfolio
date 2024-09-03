@@ -27,6 +27,7 @@ import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 
 import carrent from "./carrent.png";
+import PromptPlanet from './PromptPlanet.png'
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
@@ -59,4 +60,5 @@ export {
   carrent,
   jobit,
   tripguide,
+  PromptPlanet,
 };
