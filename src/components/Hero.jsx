@@ -20,9 +20,8 @@ const Hero = () => {
           <p className={`${styles.heroSubText} text-white-100`}>Crafting Seamless Web <br className="sm:block hidden"/>Experiences with MERN & Next.js</p>
         </div>
       </div>
-      {/* <ComputersCanvas
-      className="z-50"
-      /> */}
+      <ComputersCanvas
+      />
       <div className="absolute  xl:bottom-6 sm:bottom-3 bottom-10 flex justify-center items-center w-full pointer-events-none">
         <a href="#about">
           <div className='w-[30px] h-[65px] xl:w-[25px] xl:h-[60px] rounded-full border-4 border-secondary flex justify-center items-center pointer-events-auto'>
