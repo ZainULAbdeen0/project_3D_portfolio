@@ -21,11 +21,12 @@ import {
   tesla,
   shopify,
   carrent,
-  jobit,
+
   tripguide,
   threejs,
   PromptPlanet,
-  
+  bank,
+
 } from "../assets";
 
 export const navLinks = [
@@ -219,50 +220,50 @@ const projects = [
       },
     ],
     image: PromptPlanet,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/ZainULAbdeen0/Prompt_Planet",
   },
   {
-    name: "Car Rent",
+    name: "Horizon Bank",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: carrent,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A basic banking application built with Next.js and TypeScript. Users can connect multiple bank accounts, view transactions, and transfer funds securely. Designed for ease of use and responsiveness.",
     tags: [
       {
         name: "nextjs",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
-        color: "green-text-gradient",
+        name: "Shadcn/ui",
+        color: "gray-text-gradient",
       },
       {
-        name: "css",
+        name: "AppWrite",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: bank,
+    source_code_link: "https://github.com/ZainULAbdeen0/Project_bank_application",
   },
+  // {
+  //   name: "Car Rent",
+  //   description:
+  //     "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+  //   tags: [
+  //     {
+  //       name: "react",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "mongodb",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "tailwind",
+  //       color: "pink-text-gradient",
+  //     },
+  //   ],
+  //   image: carrent,
+  //   source_code_link: "https://github.com/",
+  // },
 ];
 
 export { services, technologies, experiences, testimonials, projects };

@@ -28,6 +28,7 @@ import tesla from "./company/tesla.png";
 
 import carrent from "./carrent.webp";
 import PromptPlanet from './PromptPlanet.webp'
+import bank from './bank.png'
 import tripguide from "./tripguide.webp";
 
 export {
@@ -59,4 +60,5 @@ export {
   carrent,
   tripguide,
   PromptPlanet,
+  bank,
 };
